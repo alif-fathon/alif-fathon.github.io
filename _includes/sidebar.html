@@ -1,7 +1,8 @@
 <!-- sidebar.html -->
 <header class="sidebar-header" role="banner">
 	<a href="{{ site.BASE_PATH }}/">
-		<img src="http://www.gravatar.com/avatar/{{site.author.email_md5}}?s=150" class="img-circle" />
+		<!-- img src="http://www.gravatar.com/avatar/{{site.author.email_md5}}?s=150" class="img-circle" /-->
+		<img src="{{ site.BASE_PATH }}/assets/media/icon1.png" class="img-circle" style="max-width:100px; height:100%" />
 	</a>
 	<h3 class="title">
         <a href="{{ site.BASE_PATH }}/">{{ site.title }}</a>
@@ -23,10 +24,10 @@
 			</a>
 		</li>
 		{% endif %}
-		{% if site.author.twitter %}
+		{% if site.author.facebook %}
 		<li>
-			<a class="btn btn-default btn-sm" href="https://twitter.com/{{ site.author.twitter }}">
-				<i class="fa fa-twitter fa-lg"></i>
+			<a class="btn btn-default btn-sm" href="https://facebook.com/{{ site.author.facebook }}">
+				<i class="fa fa-facebook fa-lg"></i>
 			</a>
 		</li>
 		{% endif %}

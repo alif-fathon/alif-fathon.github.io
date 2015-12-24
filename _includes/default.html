@@ -48,9 +48,9 @@
 				<i class="fa fa-github"></i>
 			</a>
 			{% endif %}
-			{% if site.author.twitter %}
-			<a type="button" class="navbar-toggle nav-link" href="http://twitter.com/{{ site.author.twitter }}">
-				<i class="fa fa-twitter"></i>
+			{% if site.author.facebook %}
+			<a type="button" class="navbar-toggle nav-link" href="http://facebook.com/{{ site.author.facebook }}">
+				<i class="fa fa-facebook"></i>
 			</a>
 			{% endif %}
 			{% if site.author.email %}
@@ -58,8 +58,14 @@
 				<i class="fa fa-envelope"></i>
 			</a>
 			{% endif %}
+			<!-- default upload your avatar in this site -->
+			<!-- a class="navbar-brand" href="{{ site.BASE_PATH }}/"> -->
+				<!-- img src="http://www.gravatar.com/avatar/{{site.author.email_md5}}?s=35" class="img-circle" /> -->
+				<!-- {{ site.title }} -->
+			<!-- /a -->
+			-->
 			<a class="navbar-brand" href="{{ site.BASE_PATH }}/">
-				<img src="http://www.gravatar.com/avatar/{{site.author.email_md5}}?s=35" class="img-circle" />
+				<img src="{{ site.BASE_PATH }}/assets/media/icon1.png" class="img-circle" />
 				{{ site.title }}
 			</a>
 		</div>
@@ -84,6 +90,7 @@
 			<li><a href="{{ site.BASE_PATH}}/{{ site.categories_path }}"><i class="fa fa-folder"></i>Categories</a></li>
 			<li><a href="{{ site.BASE_PATH}}/{{ site.tags_path }}"><i class="fa fa-tags"></i>Tags</a></li>
 			<li class="divider"></li>
+			<li><a href="{{ site.BASE_PATH}}/{{ site.about_path }}"><i class="fa fa-qrcode fa-lg"></i>About</a></li>
 			<li><a href="#"><i class="fa fa-arrow-up"></i>Top of Page</a></li>
 		</ul>
 	</div>
@@ -98,7 +105,8 @@
 		<footer>
 			<hr/>
 			<p>
-				&copy; {{ site.time | date: '%Y' }} {{ site.author.name }} with Jekyll. Theme: <a href="https://github.com/dbtek/dbyll">dbyll</a> by dbtek.
+				&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
+				<!-- default copyright: &copy; {{ site.time | date: '%Y' }} {{ site.author.name }} with Jekyll. Theme: <a href="https://github.com/dbtek/dbyll">dbyll</a> by dbtek. -->
 			</p>
 		</footer>
 	</div>
