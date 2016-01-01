@@ -10,6 +10,9 @@ google_analytics: dbyll
 permalink: /:categories/:title/
 # permalink: /:title/ # link di generate hanya dengan judul
 
+excerpt_link:   "Read on &rarr;"  # "Continue reading" link text at the bottom of excerpted articles
+excerpt_separator: "<!--more-->"
+
 markdown: redcarpet
 
 redcarpet:
