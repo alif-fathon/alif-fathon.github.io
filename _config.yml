@@ -1,12 +1,12 @@
 # visit https://github.com/mojombo/jekyll/wiki/Configuration for more settings
-
+gems: [jekyll-paginate]
 paginate: 5 # pagination based on number of posts
 paginate_path: "page:num"
 exclude: ["README.md"] # files to exclude
 highlighter: pygments
 # markdown: kramdown # default markdown generator dari jekyll
-disqus: dbyll
-google_analytics: dbyll
+disqus: #dbyll
+google_analytics: #dbyll
 permalink: /:categories/:title/
 # permalink: /:title/ # link di generate hanya dengan judul
 
@@ -46,5 +46,4 @@ BASE_PATH:
 # permalink: /:categories/:title/
 
 # Facebook Comments: next disable disqus replaced;
-# app id sesuaikan dengna id sendiri
 # facebook_appid: 269506799827290
