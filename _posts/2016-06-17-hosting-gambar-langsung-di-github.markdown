@@ -16,4 +16,4 @@ Menampilkan Gambar <--more-->
 ![img](/img/sample.jpg)
 
 ## per post variable
-<img alt="post" src="{{ post.img }}/sample.jpg" />
+<img alt="post" src="{{ post.img1 }}/sample.jpg" />
