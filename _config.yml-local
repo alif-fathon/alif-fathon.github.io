@@ -1,0 +1,52 @@
+# visit https://github.com/mojombo/jekyll/wiki/Configuration for more settings
+gems: [jekyll-paginate]
+paginate: 5 # pagination based on number of posts
+paginate_path: "page:num"
+exclude: ["README.md"] # files to exclude
+highlighter: pygments
+# markdown: kramdown # default markdown generator dari jekyll
+disqus: #dbyll
+google_analytics: #dbyll
+permalink: /:categories/:title/
+# permalink: /:title/ # link di generate hanya dengan judul
+
+excerpt_link:   "Read on &rarr;"  # "Continue reading" link text at the bottom of excerpted articles
+excerpt_separator: "<!--more-->"
+
+markdown: redcarpet
+
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "strikethrough", "superscript", "with_toc_data"]
+
+defaults:
+  -
+    scope:
+      path: "" # empty string for all files
+    values:
+      title:  Alif Fathon - Satu Langkah Kecil
+
+description:  Alif Fathon - Satu Langkah Kecil
+author:
+  name:       alif fathon
+  email:      aliffathon.cvblast@facebook.com
+  github:     alif-fathon
+  googleplus: alif-fathon
+  facebook:   aliffathon.cvblast
+  linkedin:   alif-fathon
+  bio:        Semua perjalanan dimulai dari -satu langkah kecil-
+  email_md5:  708a5338d72a859cd0be2d28134accf3
+
+rss_path: feed.xml
+categories_path: categories.html
+tags_path: tags.html
+about_path: about.html
+
+# images path /img
+img: /img
+
+BASE_PATH:
+
+# permalink: /:categories/:title/
+
+# Facebook Comments: next disable disqus replaced;
+# facebook_appid: 269506799827290
